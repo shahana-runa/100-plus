@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.single-service-box {
+    display: block;
+    border: 2px solid #ededed;
+    border-radius: 3px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    color: #333;
+    padding-top: 55px;
+}
+.service-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: green;
+    color: #fff;
+    font-size: 30px;
+    line-height: 70px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -35px;
+    top: -35px;
+}
+.icon-leaf {
+    background: #4dbe71;
+}
+.icon-inbox{
+    background: #74BF48;
+}    
+.icon-calendar {
+     background: #9AC015;
+}
+.single-service-box h3 {
+    font-size: 25px;
+}
+.single-service-box p {
+    margin: 0px;
+    font-size: 14px;
+}
+.single-service-box:hover {
+    color: #333;
+}
