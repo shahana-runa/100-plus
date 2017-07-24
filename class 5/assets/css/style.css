@@ -138,11 +138,13 @@ body {
     top: 0;
 } 
 .effect-5 {
-    right: -100%;
-    
+    bottom: 0;
+    left: 100%;
+    right: 0;
     transition: .3s;
     visibility: hidden;
 }
 .single-team-box:hover .effect-5 {
-    bottom: 100%;
+    width: 100%;
+    left: 0;
 }
