@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 250;
+}
+
+.section-padding{
+    padding: 80px 0;
+}
+.auther-img {
+	position: relative;
+    overflow: hidden;
+}
+
+.single-team-box:hover .author-img-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.author-img-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #c0c0c0;
+	z-index: 1;
+    opacity: 0;
+    transition: .3s;
+    visibility: hidden;
+    overflow: hidden;
+}
+.author-img-hover::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ededed;
+	opacity: 0.8;
+	content: "";
+	z-index: -1; 
+}
+.author-img-hover-inner {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.author-img-hover-inner h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #696767;
+}
+.author-img-hover-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+}
+.author-img-hover-wrap p {
+    color: #848282
+}
+.socil-link a {
+    color: #919191;
+    padding: 2px;
+    display: inline-block;
+}
+.single-team-box h4 {
+    font-size: 18px;
+    text-align: center;
+    color: #696767;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+}
+
+.single-team-box h4 span {
+    display: block;
+    font-size: 50%;
+    margin-top: 10px;
+}
+
+/*  effict */
+.effect-1{
+    top: -100%;
+    right: -100%;
+    transition: .3s;
+    visibility: hidden;
+}
+.single-team-box:hover .effect-1 {
+    top: 0;
+} 
+.effect-2{
+    top:100%;
+    transition: .3s;
+    visibility: hidden;
+}
+.single-team-box:hover .effect-2 {
+    top:0;
+} 
+.effect-3{
+    left: -100%;
+    transition: .3s;
+    visibility: hidden;
+}
+.single-team-box:hover .effect-3 {
+    left: 0;
+} 
+.effect-4 {
+    top: -100%;
+    left: -100%;
+    transition: .3s;
+    visibility: hidden;
+}
+.single-team-box:hover .effect-4 {
+    left: 0;
+    top: 0;
+} 
+.effect-5 {
+    right: -100%;
+    
+    transition: .3s;
+    visibility: hidden;
+}
+.single-team-box:hover .effect-5 {
+    bottom: 100%;
+}
