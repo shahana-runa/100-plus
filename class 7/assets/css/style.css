@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 80px 0;
+}
+
+.newsletter-bg {
+	background: url("../img/bg1.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 160px;
+}
+.newsletter-bg h2 {
+    text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 900;
+	margin-bottom: 45px;
+}
+
+.newsletter-bg:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #353535;
+    opacity: 0.7;
+    z-index: -1;
+}
+.newsletter-form input[type=submit] {
+    background: #34b79d;
+    border: none;
+    border-radius: 50px;
+    padding: 11px;
+    width: 20%;
+}
+
+.newsletter-form input[type=email] {
+    background: #000;
+    border: 1px solid #8e8582;
+    width: 79%;
+    padding: 10px 20px;
+    border-radius: 50px;
+    opacity: 0.4;
+}
+
+.newsletter-form form {
+    margin-bottom: 18px;
+}
+p.newsletter-text {
+    font-style: italic;
+    padding-top: 10px;
+}
+.bordered-box {
+    overflow: hidden;
+    border-right: 1px solid #ededed;
+    margin-top: -160px;
+    position: relative;
+    z-index: 9;
+    background: #fff;
+}
+
+.single-bordered-box {
+    float: left;
+    width: 50%;
+    border-bottom: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    padding: 50px 80px;
+    text-align: center;
+    min-height: 263px;
+}
+
+.single-bordered-box h4 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.single-testimonial-box {
+    font-style: italic;
+    color: #c1c1c1;
+    line-height: 1.6;
+}
+
+p.author-name {
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+a.boxed-btn {
+    background: #353535;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+}
