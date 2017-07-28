@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,700,800,900');
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid;outline-style:none;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.section-title {
+	margin: 50px auto;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.section-padding{
+	padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+.section-bg-1, .section-bg-2, .overlay-bg-1, .overlay-bg-2 {
+    margin: 50px 0;
+}
+
+.section-bg-1:after {background-image: url(../img/bg-1.jpg);}
+.section-bg-2:after {background-image: url(../img/bg-2.jpg);}
+.overlay-bg-1:after {
+    background-image:  linear-gradient(
+                   rgba(186,17,146, 0.50), 
+                   rgba(254,199,108, 0.50)
+                   ),
+                   url(../img/bg-3.jpg);
+}
+.overlay-bg-2:after {
+    background-image: linear-gradient(rgba(255,255,0,0.5), rgba(0,0,255,0.5)
+                ),url(../img/bg-4.jpg);
+}
+
+.section-bg-1:after, .section-bg-2:after, .overlay-bg-1:after, .overlay-bg-2:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    content: "";
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+.section-bg-2:after, .overlay-bg-2:after {
+	right: auto;
+	left: 0;
+}
+.boxed-content{
+	box-shadow: 0px 0px 4px #ccc;
+	padding: 50px;
+	text-align: center;
+	background: #fff;
+}
+.boxed-btn {
+	background: #f39c12;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
