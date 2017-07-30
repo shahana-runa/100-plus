@@ -23,9 +23,43 @@ body {
     padding: 80px 0;
 }
 
-.slide-bg-1{background-image: url(../img/slider-1.jpg);}
-.slide-bg-2{background-image: url(../img/slider-2.jpg);}
-.slide-bg-3{background-image: url(../img/slider-3.jpg);}
+.slide-bg-1{background-image: url(../img/slider-1.jpg);position: relative;z-index: 1;}
+.slide-bg-2{background-image: url(../img/slider-2.jpg);position: relative;z-index: 1;}
+.slide-bg-3{background-image: url(../img/slider-3.jpg);position: relative;z-index: 1;}
+
+.slide-bg-1:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.slide-bg-2:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+.slide-bg-3:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
 
 .main-area {
 	position: relative;
