@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+/*.section-padding{
+    padding: 80px 0;
+}*/
+.welcome-area {
+    background-image: url(../img/bg.jpg);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    z-index: 2;
+}
+
+.welcome-area:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.welcome-area-table {
+	display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.header-area {
+    border-bottom: 1px solid silver;
+    font-size: 16px;
+}
+
+.header-area.header-absolute-area {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    border: none;
+}
+
+.header-area.header-absolute-area:after, .social-link:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    content: "";
+    background: #fff;
+    opacity: 0.2;
+}
+
+.header-area.header-absolute-area .social-link {position: relative;border: none;}
+
+.header-area.header-absolute-area .social-link:before {height: 100%;width: 1px;}
+
+.header-area.header-absolute-area a {
+    color: #fff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.header-area a {
+    color: #333;
+}
+
+.main-menu ul li a {
+    display: block;
+    padding:25px;
+}
+
+.social-link {
+    border-left: 1px solid silver;
+    padding-left: 20px;
+}
+
+.social-link a {
+    display: inline-block;
+    padding: 25px 12px;
+    text-align: right;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: lowercase;
+    letter-spacing: 1.2px;
+    padding: 15px 0;
+}
+
+.logo span {
+    color: #20bfd6;
+}
+
+.welcome-area-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 20px;
+}
+
+.welcome-inner-text {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.welcome-area-inner h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.welcome-area-inner h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.welcome-area-inner p {
+    text-transform: uppercase;
+}
+
+.video-play-btn a {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #333;
+    padding-left: 5px;
+    margin-right: 12px;
+}
+
