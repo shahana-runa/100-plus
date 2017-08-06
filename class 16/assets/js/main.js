@@ -6,9 +6,6 @@ jQuery(document).ready(function($) {
 		$(".protfolio-list").isotope({
 			filter: filterData
 		});
-		
-		$(".protfolio-filter li").removeClass('active');
-		$(this).addClass('active');
 	});
 	
 	$(".protfolio-list").isotope({
@@ -19,7 +16,12 @@ jQuery(document).ready(function($) {
 			horizontalOrder: true
 		}
 	});
-	
+
+	$('body').perfectScrollbar();
+	$('.another-section').perfectScrollbar({
+
+		theme: 'green'
+	});
 	
 });
 
