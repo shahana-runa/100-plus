@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 10px 0 200px 0;
+}
+.section-padding h4 {
+	text-align: center;
+	color: #ce4a6f;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style: none;
+  box-shadow: 0px -6px 6px -6px rgba(0,0,0,0.5);
+  background-color: #F4F4F4;
+}
+.main-menu li {
+  display: inline-block;
+  position: relative;
+}
+.main-menu li a {
+  display: block;
+  color: #222755;
+  padding: 15px;
+  font-weight: 600;
+}
+.main-menu li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #000000;
+  padding: 15px 0;
+  box-shadow: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 99999;
+}
+.main-menu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+.main-menu li ul li {
+  display: block;
+}
+.main-menu li ul li a {
+  padding: 8px 15px;
+  color: #979797;
+}
+.main-menu li:hover > a {
+  color: #e5196f;
+}
+.main-menu li:hover li:hover > a {
+  background-color: #e5196f;
+  color: #fff;
+  transition: 0.3s;
+}
+
+  /*Efect 1*/
+.main-menu.effect-1 li ul {
+	margin-top: 20px;
+}
+.main-menu.effect-1 li:hover ul {
+	margin-top: 0px;
+}
+
+  /*Efect 2*/
+.main-menu.effect-2 li ul {
+	transform: scale(0) rotate(-45deg);
+}
+.main-menu.effect-2 li:hover ul {
+	transform: scale(1) rotate(0deg);
+}
+
+  /*Efect 3*/
+.main-menu.effect-3 li ul {
+	transform: translate(60px, 0px);
+}
+.main-menu.effect-3 li:hover ul {
+	transform: translate(0px, 0px);
+}
+
+  /*Efect 4*/
+.main-menu.effect-4 li ul {
+	transform: skew(20deg);
+}
+.main-menu.effect-4 li:hover ul {
+	transform: skew(0deg);
+}
+  /*Efect 5*/
+.main-menu.effect-5 li ul {
+	transform: translateZ(-100px) rotate(45deg);
+}
+.main-menu.effect-5 li:hover ul {
+	transform: translateZ(0px) rotate(0deg);
+}
+
