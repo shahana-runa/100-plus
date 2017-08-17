@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.section-padding {
+	/* padding: 80px 0; */
+	background-color: #efefef;
+	margin: 65px 0;
+}
+.single-service-hover {background-image: url(../img/bg.jpg);}
+
+
+.service-icon {
+	font-size: 120px;
+	opacity: 0.3;
+	line-height: 120px;
+	margin-bottom: 70px;
+}
+.single-service-box {
+	position: relative;
+	z-index: 2;
+	font-size: 16px;
+	line-height: 1.6;
+	padding: 75px 25px 0;
+}
+.single-service-inner h2 {
+	margin-bottom: 50px;
+}
+.single-service-hover {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-position: top left;
+	background-size: cover;
+	background-color: #ddd;
+	transform: scale(1);
+	transition: 0.4s;
+	z-index: 1;
+}
+.single-service-box:hover .single-service-hover {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.1);
+}
+.single-service-hover:after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	content: "";
+	z-index: -1;
+	opacity: .8;
+	box-shadow: 0px 29px 50px -7px #333;
+	background: #45484d;
+background: -moz-linear-gradient(top,  #45484d 0%, #25470c 0%, #4fc630 100%);
+background: -webkit-linear-gradient(top,  #45484d 0%,#25470c 0%,#4fc630 100%);
+background: linear-gradient(to bottom,  #45484d 0%,#25470c 0%,#4fc630 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#4fc630',GradientType=0 );
+
+}
+.single-service-inner {
+	position: relative;
+	z-index: 3;
+}
+.single-service-box:hover {
+	color: #fff;
+}
+.single-service-box:hover .service-icon {
+	color: #fff;
+	opacity: 1;
+	visibility: visible;
+}
+.service-bottom-icon {
+	font-size: 30px;
+	text-align: center;
+
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+}
+.single-service-box:hover .service-bottom-icon {
+	opacity: 1;
+	visibility: visible;
+} 
