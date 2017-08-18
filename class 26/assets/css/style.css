@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    margin: 125px 0;
+}
+.special-bg-section:before {background-image: url(../img/bg.jpg);}
+
+.special-bg-section {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  position: relative;
+  padding-left: 55%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 50px;
+}
+.boxed-btn {
+  display: inline-block;
+  padding: 12px 29px;
+  background: #9FBF42;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.special-bg-section::before {
+	position: absolute;
+	content: "";
+	top: -20%;
+	left: 0;
+	width: 50%;
+	height: 140%;
+	background-size: cover;
+	background-position: top center;
+	background-color: #ddd;
+}
+.special-bg-section::after {
+	position: absolute;
+	content: "";
+	right: -30px;
+	bottom: -30px;
+	height: 100%;
+	width: 50%;
+	border: 5px solid #9FBF42;
+	z-index: -1;
+}
+.special-bg-section h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #222222;
+}
+.special-bg-section p {
+	color: #8A8A8A;
+	line-height: 1.7;
+}
+.boxed-btn:hover {
+	color: #8A8A8A;
+}
