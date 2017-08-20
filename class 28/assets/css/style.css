@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:300,400,500,600,700');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.protfolio-bg-1 {background-image: url(../img/bg-1.jpg);}
+.protfolio-bg-2 {background-image: url(../img/bg-2.jpg);}
+.protfolio-bg-3 {background-image: url(../img/bg-3.png);}
+.protfolio-bg-4 {background-image: url(../img/bg-4.png);}
+.protfolio-bg-5 {background-image: url(../img/bg-5.jpg);}
+.protfolio-bg-6 {background-image: url(../img/bg-6.jpg);}
+.protfolio-bg-7 {background-image: url(../img/bg-7.jpg);}
+.protfolio-bg-8 {background-image: url(../img/bg-8.png);}
+.protfolio-bg-9 {background-image: url(../img/bg-9.jpg);}
+.protfolio-bg-10 {background-image: url(../img/bg-10.jpg);}
+.protfolio-bg-11 {background-image: url(../img/bg-11.jpg);}
+
+.header-area {
+  padding: 40px 32px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+.logo a {
+  color: #000;
+}
+.logo h1 {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+.logo h1 span {
+  position: absolute;
+  font-size: 9px;
+  top: 4px;
+  right: -13px;
+}
+.menu-trigger span {
+  display: block;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+.menu-trigger span:nth-child(2) {
+  margin: 5px 0;
+}
+.menu-trigger {
+  display: inline-block;
+  width: 25px;
+}
+.menu-trigger:hover span:nth-child(1), .menu-trigger:hover span:nth-child(3) {
+  margin: 0 5px;
+}
+
+/*Protfolio Area*/
+
+
+.protfolio-list {
+  overflow: hidden;
+  z-index: 2;
+  margin-bottom: 230px;
+  position: relative;
+}
+.single-protfolio-item {
+  float: left;
+  width: 24.9999%;
+  height: 330px;
+  background-color: #ddd;
+  background-size: 100%;
+  background-position: center;
+  display: table;
+  transition: 0.6s;
+}
+
+.single-protfolio-item.long {
+  height: 660px;
+}
+.single-protfolio-item.big {
+  width: 49.9999%;
+  height: 660px;
+}
+
+.single-protfolio-item:hover {
+	background-size: 120%;
+}
+.protfolio-hover {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+}
+.protfolio-hover a {
+  color: #000;
+}
+.protfolio-hover h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.protfolio-hover p {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.protfolio-hover p:hover {
+  opacity: 1;
+}
+.single-protfolio-item:hover .protfolio-hover {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/*Footer Area*/
+
+.footer-area {
+  background: #603AD4;
+  font-size: 17px;
+  line-height: 1.8;
+  padding: 70px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+.footer-area, .footer-area a {
+  color: #fff;
+}
+.footer-area a {
+  opacity: .6;
+}
+.footer-area h2 a {
+  opacity: 1;
+}
+.footer-area p {
+ opacity: .6; 
+}
+.footer-area h2 {
+  font-size: 22px;
+}
+
+h2.footer-logo {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+}
+h2.footer-logo span {
+  position: absolute;
+  font-size: 8px;
+  top: 0px;
+  right: -12px;
+}
+
+.footer-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
