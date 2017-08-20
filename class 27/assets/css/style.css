@@ -99,6 +99,7 @@ body {
 }
 .protfolio-hover h2 {
   font-size: 25px;
+  font-weight: 600;
 }
 .protfolio-hover p {
   opacity: 0.5;
