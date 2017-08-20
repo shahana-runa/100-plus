@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:300,400,500,600,700');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.protfolio-bg-1 {background-image: url(../img/bg-1.jpg);}
+.protfolio-bg-2 {background-image: url(../img/bg-2.jpg);}
+.protfolio-bg-3 {background-image: url(../img/bg-3.png);}
+.protfolio-bg-4 {background-image: url(../img/bg-4.png);}
+.protfolio-bg-5 {background-image: url(../img/bg-5.jpg);}
+.protfolio-bg-6 {background-image: url(../img/bg-6.jpg);}
+.protfolio-bg-7 {background-image: url(../img/bg-7.jpg);}
+.protfolio-bg-8 {background-image: url(../img/bg-8.png);}
+.protfolio-bg-9 {background-image: url(../img/bg-9.jpg);}
+.protfolio-bg-10 {background-image: url(../img/bg-10.jpg);}
+.protfolio-bg-11 {background-image: url(../img/bg-11.jpg);}
+
+.header-area {
+	padding: 40px 32px;
+}
+.logo a {
+  color: #000;
+}
+.logo h1 {
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 3px;
+  font-family: 'Muli', sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+.logo h1 span {
+  position: absolute;
+  font-size: 9px;
+  top: 3px;
+  right: -12px;
+}
+.menu-trigger span {
+  display: block;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+.menu-trigger span:nth-child(2) {
+  margin: 5px 0;
+}
+.menu-trigger {
+  display: inline-block;
+  width: 25px;
+}
+.menu-trigger:hover span:nth-child(1), .menu-trigger:hover span:nth-child(3) {
+  margin: 0 5px;
+}
+.single-protfolio-item {
+  float: left;
+  width: 25%;
+  height: 320px;
+  background-color: #ddd;
+  background-size: 100%;
+  background-position: center;
+  display: table;
+  transition: 0.6s;
+}
+
+.single-protfolio-item:hover {
+	background-size: 120%;
+}
+.protfolio-hover {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+}
+.protfolio-hover a {
+  color: #000;
+}
+.protfolio-hover h2 {
+  font-size: 25px;
+}
+.protfolio-hover p {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.protfolio-hover p:hover {
+  opacity: 1;
+}
+.single-protfolio-item:hover .protfolio-hover {
+	opacity: 1;
+	visibility: visible;
+}
