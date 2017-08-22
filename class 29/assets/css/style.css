@@ -33,6 +33,112 @@ body {
 .protfolio-bg-10 {background-image: url(../img/bg-10.jpg);}
 .protfolio-bg-11 {background-image: url(../img/bg-11.jpg);}
 
+
+/*Off Canvas Area*/
+
+.canvas-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #15416e;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.canvas-overlay.active {
+  opacity: 0.2;
+  visibility: visible;
+}
+
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -40%;
+  height: 100%;
+  width: 40%;
+  z-index: 99;
+  background-color: #fff;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+.offcanvas-menu.active {
+  right: 0;
+}
+.canvas-bottom-section {
+  position: absolute;
+  left: 60px;
+  bottom: 80px;
+  max-width: 300px;
+}
+.boxed-text {
+  background: #efebff;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 5px;
+  line-height: 1.6;
+  border-radius: 3px;
+}
+.social-icons a {
+  color: #b6b3c1;
+  font-size: 23px;
+  display: inline-block;
+  padding-right: 12px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.offcanvas-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 20px;
+}
+.offcanvas-menu ul li a {
+  color: #100060;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.offcanvas-menu ul li a:hover {
+  color: #613AD6;
+}
+.menu-item-wrap {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.menu-item-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 200px;
+}
+
+
+.menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 65px;
+  border-left: 1px solid #e4e4e4;
+  height: 100%;
+}
+.menu-close i.fa {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*Header Area*/
+
 .header-area {
   padding: 40px 32px;
   position: absolute;
@@ -72,6 +178,7 @@ body {
 .menu-trigger {
   display: inline-block;
   width: 25px;
+  cursor: pointer;
 }
 .menu-trigger:hover span:nth-child(1), .menu-trigger:hover span:nth-child(3) {
   margin: 0 5px;
@@ -94,7 +201,7 @@ body {
   background-size: 100%;
   background-position: center;
   display: table;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
 .single-protfolio-item.long {
@@ -115,19 +222,19 @@ body {
   background: #fff;
   opacity: 0;
   visibility: hidden;
-  transition: 0.6s;
+  transition: 0.7s;
 }
 .protfolio-hover a {
   color: #000;
 }
 .protfolio-hover h2 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 27px;
+  line-height: 25px;
 }
 .protfolio-hover p {
   opacity: 0.5;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 10px;
 }
 .protfolio-hover p:hover {
   opacity: 1;
