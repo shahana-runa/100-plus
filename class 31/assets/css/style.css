@@ -50,14 +50,13 @@ body {
 }
 .border-wrap::after {
 	position: absolute;
-	left: -20px;
+	left: -30px;
 	bottom: 0;
-	width: 35px;
+	width: 38px;
 	height: 4px;
 	background: #fff;
 	content: "";
 }
-
 .section-dark-bg h4 {
 	text-transform: uppercase;
 	font-weight: 400;
