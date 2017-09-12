@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.timeline-area {
+	position: relative;
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	padding: 80px;
+	z-index: 1;
+}
+.timeline-area:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #072938;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 75px;
+}
+
+.section-title h3 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.section-title h3 span {
+    color: #0B97DF;
+}
+
+.section-title p {
+    color: #62899C;
+    font-weight: 600;
+}
+
+.timeline-frame {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #56869c;
+    padding: 3px;
+}
+
+.timeline {
+    position: relative;
+    z-index: 1;
+}
+
+.timeline:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+    background: #56869c;
+    z-index: -1;
+    bottom: 0;
+    margin-left: -1px;
+}
+
+.single-timeline-item {
+    position: relative;
+    width: 150px;
+    margin: 0 auto 50px;
+}
+
+.timeline-text {
+    position: absolute;
+    background: #072938;
+    color: #90ADBD;
+    width: 400px;
+    height: 180px;
+    left: -440px;
+    top: 50%;
+    margin-top: -80px;
+    padding: 30px;
+    text-align: right;
+    border-radius: 50px;
+}
+.single-timeline-item:nth-child(2n+2) .timeline-text {
+	left: auto;
+	right: -440px;
+	text-align: left;
+	background: #fff;
+}
+.timeline-text h3 {
+    color:  #0B97DF;
+    font-weight: 300;
+}
+.single-timeline-item:nth-child(2n+1) .timeline-text:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	right: -20px;
+	top: 70px;
+	border-top: 15px solid transparent;
+	border-left: 30px solid #072938;
+	border-bottom: 15px solid transparent;
+}
+.single-timeline-item:nth-child(2n+2) .timeline-text:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	left: -20px;
+	top: 70px;
+	border-top: 15px solid transparent;
+	border-right: 30px solid #fff;
+	border-bottom: 15px solid transparent;
+}
