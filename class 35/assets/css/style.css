@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.section-padding{
+  padding: 80px 0;
+}
+.stethoscope-bg {background: url(../img/bg.png) no-repeat scroll right bottom;}
+
+.pricing-content li:before {
+	font-family: FontAwesome;
+	content: "\f046";
+}
+
+.section-padding.stethoscope-bg {
+  background-color: #F6F6F6;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+.section-title h2 span {
+  color: #0DA3EE;
+}
+.section-title p {
+    font-weight: 500;
+    color: #81888E;
+}
+.single-pricing-box {
+  background: #fff;
+  margin-top: 50px;
+}
+.stethoscope-bg .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.stethoscope-bg .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.pricing-title {
+  background: #03BBD4;
+  color: #fff;
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 18px;
+  padding-top: 100px;
+}
+.pricing-ticker {
+  background: #393C4F;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #777F90;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 22px;
+  position: absolute;
+  top: -50px;
+}
+.pricing-ticker span {
+  font-size: 25px;
+  color: #05C6E0;
+}
+
+.pricing-title h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 50px;
+}
+.color-2 .pricing-title {
+  background-color: #02A3EF;
+}
+
+.color-3 .pricing-title {
+  background-color: #2BB5F7;
+}
+
+.pricing-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-content li:nth-child(2n+2) {
+  background-color: #f5f6f8;
+}
+
+.pricing-content li {
+  padding: 12px;
+  font-size: 15px;
+  padding-left: 38px;
+}
+
+.pricing-content li:before {
+  margin-right: 10px;
+}
+.boxed-btn {
+    padding: 12px 25px;
+    border: 1px solid #71B6F2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(145, 217, 255);
+    font-size: 18px;
+    display: inline-block;
+}
+
+.pricing-content {
+  color: #81888E;
+  font-weight: 500;
+}
+
+.pricing-btn {
+  padding: 23px 36px;
+  border-bottom: 1px solid #ddd;
+}
+.pricing-content, .pricing-btn {
+  border-left: 1px solid #ddd;
+}
+.col-md-4:nth-child(3) .pricing-content, .col-md-4:nth-child(3) .pricing-btn {
+  border-right: 1px solid #ddd;
+}
