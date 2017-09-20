@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800');
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.section-padding{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    z-index: 1;
+}
+.section-bg {background-image: url(../img/bg.jpg);}
+
+.section-bg:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	background-color: #000;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+.section-title h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 25px;
+}
+
+.title-border {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+    z-index: 1;
+}
+.title-border:after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: -10px;
+    background-color: #33BCC8;
+    width: 30px;
+    height: 3px;
+}
+
+.portfolio-bg-1 {background-image: url(../img/p1.jpg);}
+.portfolio-bg-2 {background-image: url(../img/p2.jpg);}
+.portfolio-bg-3 {background-image: url(../img/p3.jpg);}
+.portfolio-bg-4 {background-image: url(../img/p4.jpg);}
+.portfolio-bg-5 {background-image: url(../img/p5.jpg);}
+.portfolio-bg-6 {background-image: url(../img/p6.jpg);}
+
+.portfolio-list {
+    overflow: hidden;
+}
+
+.single-portfolio-item {
+    float: left;
+    width: 20%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+}
+.single-portfolio-item.large {
+	height: 500px;
+	width: 40%;
+}
+.single-portfolio-item.wide {
+	width: 40%;
+}
+
+.portfolio-hover {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    z-index: 1;
+}
+
+.portfolio-hover-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio-hover-inner:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.portfolio-hover-inner i {
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    visibility:visible;
+    transform: scale(0.1);
+    transition: 0.5s;
+}
+
+.single-portfolio-item:hover .portfolio-hover-inner:after {
+    visibility: visible;
+    opacity: 0.8;
+}
+.single-portfolio-item:hover .portfolio-hover-inner i {
+    visibility:visible;
+    opacity:1;
+    transform: scale(1);
+}
