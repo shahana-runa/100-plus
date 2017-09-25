@@ -81,14 +81,14 @@ body {
 }
 
 .section-title h2 {
-    font-size: 50px;
+    font-size: 47px;
     font-weight: 800;
 }
 
 h2:after {
     position: absolute;
     content: "";
-    top: 38%;
+    top: 37%;
     left: 20px;
     width: 20%;
     height: 2px;
@@ -96,6 +96,6 @@ h2:after {
 }
 
 .section-content {
-    margin-top: 62px;
+    margin-top: 65px;
     color: #CAC4C3;
 }
