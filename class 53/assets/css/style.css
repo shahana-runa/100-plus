@@ -1,0 +1,83 @@
+
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.zigzag-text-bg-1 {background-image: url(../img/bg1.jpg);}
+.zigzag-text-bg-2 {background-image: url(../img/bg2.jpg);}
+
+
+.section-padding {
+	background-size: cover;
+	background-position: center;
+}
+.zigzag-text {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.zigzag-text h2 {
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+
+.zigzag-text-bg-1 .zigzag-text {
+	padding-left: 80px;
+	padding-right: 0px;
+}
+.zigzag-text::after {
+	position: absolute;
+	content: "";
+	left: -3900%;
+	top: 0;
+	height: 100%;
+	width: 4020%;
+	background-color: #042352;
+	z-index: -1;
+	transform: skew(10deg);
+}
+.boxed-button {
+	display: inline-block;
+	color: #fff;
+	background-color: #BAD432;
+	padding: 10px 22px;
+	border-radius: 3px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 20px;
+	border-bottom: 2px solid #fff;
+}
+.zigzag-text-bg-2 .zigzag-text:after {
+	left: auto;
+	right: -3900%;
+	background-color: #00CCCD;
+}
+.zigzag-text-bg-2 .zigzag-text {
+	padding-left: 0;
+	padding-right: 80px;
+}
+.seperator {
+	padding: 10px;
+	background-color: #BCD734;
+}
