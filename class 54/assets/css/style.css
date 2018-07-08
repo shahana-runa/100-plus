@@ -1,0 +1,117 @@
+
+a:focus, input:focus, textarea:focus, button:focus {
+	outline: 0 solid;
+	outline-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a:hover { text-decoration: none }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333333;
+    line-height: 1.8;
+}
+.section-padding {
+	position: relative;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+.section-bg {background-image: url(../img/bg.jpg);}
+
+.section-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 62%;
+	background-size: cover;
+	background-position: center;
+}
+
+.section-bg:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #31d6be;
+	opacity: .94;
+}
+.absolute-text {
+	position: absolute;
+	top: 38%;
+	left: -22%;
+	transform: rotate(-90deg);
+}
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	margin-bottom: 17px;
+	color: #333;
+	border-radius: 3px;
+	font-size: 12px;
+}
+.contact-form h2 {
+	color: #fff;
+	font-weight: 700;
+	font-size: 40px;
+	opacity: 0.56;
+}
+.contact-form input[type=submit] {
+	width: auto;
+	background: #fff;
+	color: #2ecbb5;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 10px 25px;
+}
+.contact-form input[type="date"] {
+	padding: 4px;
+}
+
+.appointment-text {
+	padding-left: 110px;
+}
+
+.appointment-text h3 {
+	margin-bottom: 25px;
+}
+
+.appointment-text ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.appointment-text ul li {
+	padding: 8px 0;
+	font-size: 15px;
+
+}
+
+.fa {
+	margin-right: 14px;
+	color: #2ecbb5;
+}
+
+.boxed-btn {
+	background: #2ecbb5;
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 10px 40px;
+	border-radius: 3px;
+	margin-top: 35px;
+	display: inline-block;
+}
